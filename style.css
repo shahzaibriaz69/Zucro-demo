@@ -1,10 +1,5 @@
-/* ==========================================================================
-   💎 ZUCRO EXPERTS CORE CUSTOM DESIGN SYSTEM SPECIFICATIONS (MASTER)
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-/* --- Root Configuration Defaults --- */
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -17,7 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Scrollbar System */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -42,11 +37,7 @@ body {
     }
 }
 
-/* ==========================================================================
-   ⚡ STRUCTURAL COMPONENTS & INTERACTIVE SYSTEMS
-   ========================================================================== */
 
-/* Glassmorphism System Specs */
 .premium-glass-card {
     background: rgba(19, 42, 66, 0.4);
     backdrop-filter: blur(12px);
@@ -63,7 +54,7 @@ body {
     box-shadow: 0 15px 40px rgba(255, 106, 0, 0.15);
 }
 
-/* Button UI Core System Matrix */
+
 .btn-zucro-primary {
     background-color: #FF6A00;
     color: #FFFFFF;
@@ -170,11 +161,7 @@ body {
     transform: translateY(0);
 }
 
-/* ==========================================================================
-   📌 INDIVIDUAL SECTION BLOCK DESIGNERS
-   ========================================================================== */
 
-/* --- Sticky Top Infrastructure --- */
 .sticky-announcement-bar {
     background: linear-gradient(to right, #050D15, rgba(100%, 42%, 0%), #050D15);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -202,7 +189,7 @@ body {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* --- Premium Navigation System --- */
+
 .premium-navbar-header {
     position: sticky;
     top: 0;
@@ -236,7 +223,7 @@ body {
 .desktop-nav-menu a { color: #9CA3AF; transition: color 0.3s ease; }
 .desktop-nav-menu a:hover { color: #FFFFFF; }
 
-/* Mobile Dropout Drawer Configuration */
+
 .mobile-dropout-drawer {
     display: none;
     background-color: #050D15;
@@ -248,7 +235,7 @@ body {
 }
 .mobile-dropout-drawer.show { display: flex; }
 
-/* --- Hero Frame Blocks --- */
+
 .hero-section-wrapper {
     position: relative;
     min-h: 900px;
@@ -256,7 +243,7 @@ body {
     align-items: center;
     padding: 6rem 0;
     overflow: hidden;
-    /* padding-bottom: 6rem; */
+   
 }
 .hero-split-grid {
     display: grid;
@@ -305,10 +292,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Hero Live Mockup Console Display */
-/* ==========================================================================
-   🚨 SYSTEM UPGRADE: ULTRA-LUXURY TECH TELEMETRY CORE CONSOLE
-   ========================================================================== */
 .mockup-console-box {
     width: 100%;
     max-width: 580px;
@@ -328,7 +311,7 @@ body {
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Mouse hover side glowing reflection effect */
+
 .mockup-console-box:hover {
     border-color: rgba(255, 106, 0, 0.25);
     box-shadow: 
@@ -337,7 +320,7 @@ body {
         0 0 80px -15px rgba(255, 106, 0, 0.25);
 }
 
-/* Top linear neon light beam tracer */
+
 .mockup-console-box::before {
     content: '';
     position: absolute;
@@ -348,7 +331,7 @@ body {
     background: linear-gradient(90deg, transparent, rgba(255, 106, 0, 0.5), rgba(74, 222, 128, 0.3), transparent);
 }
 
-/* Header Grid Structure */
+
 .console-header-flex {
     display: flex;
     align-items: center;
@@ -379,7 +362,7 @@ body {
     font-weight: 500;
 }
 
-/* Premium Fluid Metric Tiles System */
+
 .mockup-metrics-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -396,7 +379,7 @@ body {
     overflow: hidden;
 }
 
-/* Subtle inner vignette shadow gradient for tech aesthetics */
+
 .metric-tile::after {
     content: '';
     position: absolute;
@@ -425,7 +408,7 @@ body {
     align-items: baseline;
 }
 
-/* Floating Status Spark Pill Badges */
+
 .metric-trend-badge {
     font-size: 9px;
     font-weight: 600;
@@ -448,7 +431,7 @@ body {
     border-color: rgba(255, 106, 0, 0.1);
 }
 
-/* Pulsing Core Live Feed Chip */
+
 .live-glow-badge {
     background: radial-gradient(rgba(34, 197, 94, 0.15), transparent);
     border: 1px solid rgba(34, 197, 94, 0.25);
@@ -462,7 +445,7 @@ body {
     align-items: center;
 }
 
-/* Telemetry Server Loading Bar Matrices */
+
 .console-progress-trackers {
     display: flex;
     flex-direction: column;
@@ -481,7 +464,7 @@ body {
 }
 .progress-bar-wrapper {
     width: 65%;
-    height: 4px; /* Super elegant razor thin bar */
+    height: 4px;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 9999px;
     overflow: hidden;
@@ -492,7 +475,7 @@ body {
     border-radius: 9999px;
     position: relative;
 }
-/* Cyberpunk scanning glow pulse inside lines */
+
 .progress-fill-node::after {
     content: '';
     position: absolute;
@@ -513,7 +496,7 @@ body {
     text-align: right;
 }
 
-/* Responsive Fluid Viewport Adapters */
+
 @media (max-width: 640px) {
     .mockup-metrics-grid {
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
@@ -535,7 +518,7 @@ body {
     word-wrap: break-word;
 }
 
-/* --- High Conversion Problems Matrix --- */
+
 .problems-section-frame {
     background-color: #050D15;
     padding: 7rem 0;
@@ -605,7 +588,7 @@ body {
 }
 .problem-leak-card:hover .problem-card-icon-back { color: rgba(239, 68, 68, 0.2); }
 
-/* --- Interactive Connected Solutions --- */
+
 .solutions-section-frame { background-color: #050D15; padding: 6rem 0; }
 .solutions-flow-diagram-wrapper {
     display: flex;
@@ -680,7 +663,7 @@ body {
 }
 .service-deploy-btn:hover { background-color: #FF6A00; color: #FFFFFF; }
 
-/* --- GHL & CRM Platform Modules --- */
+
 .crm-section-frame { padding: 6rem 0; }
 .crm-blocks-quad-grid {
     display: grid;
@@ -690,7 +673,7 @@ body {
 @media (max-width: 1024px) { .crm-blocks-quad-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .crm-blocks-quad-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 
-/* --- Pricing Tiers Table Configuration --- */
+
 .pricing-section-frame { padding: 6rem 0; }
 .pricing-tri-matrix-grid {
     display: grid;
@@ -726,7 +709,7 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* --- Dual Split Inquiry Contact Module --- */
+
 .contact-section-frame { background-color: #050D15; padding: 6rem 0; position: relative; z-index: 10; }
 .contact-split-grid {
     display: grid;
@@ -753,7 +736,7 @@ body {
 }
 .inquiry-text-field:focus { outline: none; border-color: #FF6A00; }
 
-/* --- Master Bottom Conversion Banner --- */
+
 .conversion-banner-frame {
     background: linear-gradient(to right, #050D15, rgba(255, 106, 0, 0.1), #050D15);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -764,7 +747,7 @@ body {
 }
 .conversion-banner-wrapper { max-w: 42rem; margin: 0 auto; padding: 0 1rem; }
 
-/* --- Global Footer Node --- */
+
 .global-footer-node { background-color: #050D15; border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 3rem 0; font-size: 0.75rem; color: #6B7280; position: relative; z-index: 10; }
 .footer-flex-wrapper { display: flex; justify-content: space-between; align-items: center; }
 @media (max-width: 640px) { .footer-flex-wrapper { flex-direction: column; gap: 1.5rem; } }
@@ -773,7 +756,7 @@ body {
 .footer-social-channels a:hover { color: #FFFFFF; }
 
 @media (max-width: 1024px) {
-    /* Navbar content spacing adjustments */
+   
     .navbar-wrapper {
         height: auto;
         padding: 1rem 0;
@@ -781,7 +764,7 @@ body {
         gap: 1rem;
     }
 
-    /* 768px par links ko safe gap dene ke liye ya hide karne ke liye config */
+   
     .desktop-nav-menu {
         gap: 1rem !important;
         font-size: 0.8rem !important;
@@ -789,19 +772,19 @@ body {
 }
 
 @media (max-width: 900px) {
-    /* 900px se niche desktop menu ko disable karo aur pure header me burger menu trigger karo */
+    
     .hidden.md\:flex.desktop-nav-menu {
         display: none !important;
     }
     .hidden.md\:block {
-        display: none !important; /* Premium button hide */
+        display: none !important; 
     }
     #menu-toggle {
-        display: block !important; /* Burger menu show */
+        display: block !important; 
     }
 }
 
-/* Console Counter fixes inside responsive limits */
+
 @media (max-width: 991px) and (min-width: 641px) {
     .mockup-metrics-grid {
         gap: 0.5rem !important;
