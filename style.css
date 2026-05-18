@@ -308,64 +308,164 @@ body {
 /* Hero Live Mockup Console Display */
 .mockup-console-box {
     width: 100%;
-    max-width: 550px;
-    background: rgba(19, 42, 66, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    box-sizing: border-box; /* Force calculation inside border limits */
+    max-width: 580px;
+    background: linear-gradient(135deg, rgba(11, 27, 43, 0.7) 0%, rgba(5, 13, 21, 0.9) 100%);
+    border: 1px solid rgba(255, 106, 0, 0.15);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8),
+                0 0 50px -10px rgba(255, 106, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+
+/* Futuristic subtle top edge light border effect */
+.mockup-console-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 106, 0, 0.4), transparent);
+}
+
 .console-header-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap; /* 👈 Layout split window if screen gets too tight */
-    gap: 0.5rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
 }
+
 .window-dots-flex { 
     display: flex; 
     align-items: center; 
-    gap: 0.5rem; 
+    gap: 0.6rem; 
 }
+
 .window-dot { 
-    width: 12px; 
-    height: 12px; 
+    width: 10px; 
+    height: 10px; 
     border-radius: 50%; 
-    flex-shrink: 0; 
 }
+
+.console-title-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    color: #6B7280;
+    letter-spacing: 1px;
+}
+
+/* Core Tech Grid Configuration */
 .mockup-metrics-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important; /* Standard view */
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
 }
 
-/* 👈 Mobile par numbers ko ek doosre ke neechay line up karne ke liye vertical orientation layer */
-@media (max-width: 640px) {
-    .console-header-flex {
-        flex-direction: column; /* 👈 "Live Tracking" text moves safely below window dots */
-        align-items: flex-start;
-        gap: 0.75rem;
-    }
-    
-    .mockup-metrics-grid {
-        grid-template-columns: repeat(1, minmax(0, 1fr)) !important; /* 👈 Forces counters to stack beautifully one by one vertically */
-        gap: 0.75rem;
-    }
-    
-    .metric-tile {
-        text-align: center;
-        padding: 0.85rem;
-    }
+.metric-tile {
+    background: rgba(5, 13, 21, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+    padding: 1.25rem 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
 
-    .metric-tile p.text-2xl {
-        font-size: 1.5rem !important; /* Shrinks mega typography down to avoid string breaks */
+.metric-tile:hover {
+    background: rgba(19, 42, 66, 0.3);
+    border-color: rgba(255, 106, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.metric-label {
+    font-size: 10px !important;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    tracking-content: 0.1em;
+    font-weight: 700;
+}
+
+.metric-value-wrapper {
+    font-size: 1.625rem !important;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+}
+
+/* Micro Status Spark-indicator badges */
+.metric-trend-badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.trend-up { background: rgba(34, 197, 94, 0.1); color: #22C55E; }
+.trend-orange { background: rgba(255, 106, 0, 0.1); color: #FF6A00; }
+
+/* Glowing Live Tracking Badge */
+.live-glow-badge {
+    background: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    color: #4ADE80;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-family: monospace;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.1);
+}
+
+/* Premium Simulated Progress Bars Engine */
+.console-progress-trackers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.progress-bar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #4B5563;
+}
+.progress-bar-wrapper {
+    width: 70%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 9999px;
+    overflow: hidden;
+}
+.progress-fill-node {
+    height: 100%;
+    border-radius: 9999px;
+}
+
+/* Responsive Overrides */
+@media (max-width: 640px) {
+    .mockup-metrics-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        gap: 1rem;
     }
+    .console-header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .live-glow-badge { margin-top: 0.25rem; }
 }
 .metric-tile {
     background: rgba(5, 13, 21, 0.6);
@@ -612,3 +712,45 @@ body {
 .footer-social-channels { display: flex; gap: 1.5rem; font-size: 1rem; }
 .footer-social-channels a { color: #6B7280; transition: color 0.3s ease; }
 .footer-social-channels a:hover { color: #FFFFFF; }
+
+@media (max-width: 1024px) {
+    /* Navbar content spacing adjustments */
+    .navbar-wrapper {
+        height: auto;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* 768px par links ko safe gap dene ke liye ya hide karne ke liye config */
+    .desktop-nav-menu {
+        gap: 1rem !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 900px) {
+    /* 900px se niche desktop menu ko disable karo aur pure header me burger menu trigger karo */
+    .hidden.md\:flex.desktop-nav-menu {
+        display: none !important;
+    }
+    .hidden.md\:block {
+        display: none !important; /* Premium button hide */
+    }
+    #menu-toggle {
+        display: block !important; /* Burger menu show */
+    }
+}
+
+/* Console Counter fixes inside responsive limits */
+@media (max-width: 991px) and (min-width: 641px) {
+    .mockup-metrics-grid {
+        gap: 0.5rem !important;
+    }
+    .metric-tile {
+        padding: 0.75rem 0.5rem !important;
+    }
+    .metric-tile p.text-2xl {
+        font-size: 1.25rem !important;
+    }
+}

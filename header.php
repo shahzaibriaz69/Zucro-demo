@@ -34,7 +34,7 @@
         <div class="zucro-container navbar-wrapper">
 
             <a href="#" class="nav-logo-text">
-                <span class="text-[#FF6A00]">ZUCRO</span>EXPERTS<span class="nav-logo-badge">AI</span>
+                <span class="text-[#FF6A00]">ZUCRO</span>EXPERTS
             </a>
 
 

@@ -33,42 +33,75 @@
             <div class="mockup-console-box">
                 <div class="console-header-flex">
                     <div class="window-dots-flex">
-                        <span class="window-dot bg-red-500"></span>
-                        <span class="window-dot bg-yellow-500"></span>
-                        <span class="window-dot bg-green-500"></span>
-                        <span class="text-xs text-gray-500 font-mono ml-2">ROAS_ANALYTICS_LIVE.sys</span>
+                        <span class="window-dot bg-red-500/80"></span>
+                        <span class="window-dot bg-yellow-500/80"></span>
+                        <span class="window-dot bg-green-500/80"></span>
+                        <span class="console-title-text ml-2">ROAS_ANALYTICS_LIVE.sys</span>
                     </div>
-                    <span class="bg-green-500/10 text-green-400 text-xs px-2 py-0.5 rounded font-mono">Live
-                        Tracking</span>
+                    <span class="live-glow-badge">
+                        <i class="fas fa-circle text-xs text-green-400 animate-ping mr-1.5"></i>LIVE CORE FEED
+                    </span>
                 </div>
 
                 <div class="mockup-metrics-grid">
                     <div class="metric-tile">
-                        <p class="text-[11px] text-gray-500 uppercase tracking-wider">Total Sales</p>
-                        <p class="text-2xl font-bold text-white mt-1">$<span class="counter"
-                                data-target="148390">0</span></p>
+                        <p class="metric-label">Total Revenue</p>
+                        <div class="metric-value-wrapper text-white">
+                            <span>$</span><span class="counter" data-target="148390">0</span>
+                        </div>
+                        <span class="metric-trend-badge trend-up">
+                            <i class="fas fa-caret-up"></i> +24% MoM
+                        </span>
                     </div>
+
                     <div class="metric-tile">
-                        <p class="text-[11px] text-gray-500 uppercase tracking-wider">Qualified Leads</p>
-                        <p class="text-2xl font-bold text-white mt-1"><span class="counter"
-                                data-target="12450">0</span>+</p>
+                        <p class="metric-label">Valid Leads</p>
+                        <div class="metric-value-wrapper text-white">
+                            <span class="counter" data-target="12450">0</span><span>+</span>
+                        </div>
+                        <span class="metric-trend-badge trend-up">
+                            <i class="fas fa-caret-up"></i> High Intent
+                        </span>
                     </div>
-                    <div class="metric-tile">
-                        <p class="text-[11px] text-gray-500 uppercase tracking-wider">Avg ROAS</p>
-                        <p class="text-2xl font-bold text-[#FF6A00] mt-1"><span class="counter"
-                                data-target="5.8">0</span>x</p>
+
+                    <div class="metric-tile" style="border-color: rgba(255,106,0,0.15);">
+                        <p class="metric-label text-[#FF6A00]">Scale Return</p>
+                        <div class="metric-value-wrapper text-[#FF6A00]">
+                            <span class="counter" data-target="5.8">0</span><span>x</span>
+                        </div>
+                        <span class="metric-trend-badge trend-orange">
+                            <i class="fas fa-bolt"></i> Target Met
+                        </span>
                     </div>
                 </div>
 
-                <div class="space-y-3">
-                    <div class="h-[6px] w-full bg-white/5 rounded-full overflow-hidden">
-                        <div class="h-full bg-[#FF6A00] rounded-full w-[85%] animate-pulse"></div>
+                <div class="console-progress-trackers border-t border-white/5 pt-5">
+                    <div class="progress-bar-row">
+                        <span class="font-mono text-[10px] text-gray-500">META ATTRIBUTION ENGINE</span>
+                        <div class="progress-wrapper-container flex items-center justify-end gap-3 w-[70%]">
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-fill-node bg-[#FF6A00]" style="width: 88%"></div>
+                            </div>
+                            <span class="font-mono text-[10px] text-gray-400">88%</span>
+                        </div>
                     </div>
-                    <div class="h-[6px] w-full bg-white/5 rounded-full overflow-hidden">
-                        <div class="h-full bg-blue-500 rounded-full w-[65%]"></div>
+                    <div class="progress-bar-row">
+                        <span class="font-mono text-[10px] text-gray-500">GOOGLE CLOUD SERVER</span>
+                        <div class="progress-wrapper-container flex items-center justify-end gap-3 w-[70%]">
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-fill-node bg-blue-500" style="width: 74%"></div>
+                            </div>
+                            <span class="font-mono text-[10px] text-gray-400">74%</span>
+                        </div>
                     </div>
-                    <div class="h-[6px] w-full bg-white/5 rounded-full overflow-hidden">
-                        <div class="h-full bg-green-500 rounded-full w-[92%]"></div>
+                    <div class="progress-bar-row">
+                        <span class="font-mono text-[10px] text-gray-500">TIKTOK ALGORITHM API</span>
+                        <div class="progress-wrapper-container flex items-center justify-end gap-3 w-[70%]">
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-fill-node bg-emerald-500" style="width: 93%"></div>
+                            </div>
+                            <span class="font-mono text-[10px] text-gray-400">93%</span>
+                        </div>
                     </div>
                 </div>
             </div>
