@@ -33,74 +33,79 @@
             <div class="mockup-console-box">
                 <div class="console-header-flex">
                     <div class="window-dots-flex">
-                        <span class="window-dot bg-red-500/80"></span>
-                        <span class="window-dot bg-yellow-500/80"></span>
-                        <span class="window-dot bg-green-500/80"></span>
-                        <span class="console-title-text ml-2">ROAS_ANALYTICS_LIVE.sys</span>
+                        <span class="window-dot bg-[#EF4444]"></span>
+                        <span class="window-dot bg-[#F59E0B]"></span>
+                        <span class="window-dot bg-[#10B981]"></span>
+                        <span class="console-title-text ml-3">CORE_LIVE_INDEX // SYSTEM.01</span>
                     </div>
                     <span class="live-glow-badge">
-                        <i class="fas fa-circle text-xs text-green-400 animate-ping mr-1.5"></i>LIVE CORE FEED
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-400 mr-2 animate-pulse"
+                            style="box-shadow: 0 0 8px #4ade80;"></span>REALTIME TELEMETRY
                     </span>
                 </div>
 
                 <div class="mockup-metrics-grid">
                     <div class="metric-tile">
-                        <p class="metric-label">Total Revenue</p>
-                        <div class="metric-value-wrapper text-white">
-                            <span>$</span><span class="counter" data-target="148390">0</span>
+                        <p class="metric-label">TRACKED REVENUE</p>
+                        <div class="metric-value-wrapper">
+                            <span class="text-gray-500 font-normal mr-0.5">$</span><span class="counter"
+                                data-target="148390">0</span>
                         </div>
                         <span class="metric-trend-badge trend-up">
-                            <i class="fas fa-caret-up"></i> +24% MoM
+                            <i class="fas fa-arrow-up text-[8px]"></i> +24.8% ALPHA
                         </span>
                     </div>
 
                     <div class="metric-tile">
-                        <p class="metric-label">Valid Leads</p>
-                        <div class="metric-value-wrapper text-white">
-                            <span class="counter" data-target="12450">0</span><span>+</span>
+                        <p class="metric-label">QUALIFIED LEADS</p>
+                        <div class="metric-value-wrapper">
+                            <span class="counter" data-target="12450">0</span><span
+                                class="text-gray-500 font-normal ml-0.5">+</span>
                         </div>
                         <span class="metric-trend-badge trend-up">
-                            <i class="fas fa-caret-up"></i> High Intent
+                            <i class="fas fa-bolt text-[8px]"></i> HIGH CAPTURE
                         </span>
                     </div>
 
-                    <div class="metric-tile" style="border-color: rgba(255,106,0,0.15);">
-                        <p class="metric-label text-[#FF6A00]">Scale Return</p>
+                    <div class="metric-tile"
+                        style="background: linear-gradient(to bottom, rgba(255,106,0,0.02), transparent); border-color: rgba(255, 106, 0, 0.08);">
+                        <p class="metric-label text-[#FF6A00]/80">SCALABILITY LAYER</p>
                         <div class="metric-value-wrapper text-[#FF6A00]">
-                            <span class="counter" data-target="5.8">0</span><span>x</span>
+                            <span class="counter" data-target="5.8">0</span><span
+                                class="text-[#FF6A00]/60 font-normal ml-0.5">x</span>
                         </div>
                         <span class="metric-trend-badge trend-orange">
-                            <i class="fas fa-bolt"></i> Target Met
+                            <i class="fas fa-shield-check text-[8px]"></i> TARGET ACQUIRED
                         </span>
                     </div>
                 </div>
 
-                <div class="console-progress-trackers border-t border-white/5 pt-5">
+                <div class="console-progress-trackers border-t border-white/5 pt-6">
                     <div class="progress-bar-row">
-                        <span class="font-mono text-[10px] text-gray-500">META ATTRIBUTION ENGINE</span>
-                        <div class="progress-wrapper-container flex items-center justify-end gap-3 w-[70%]">
+                        <span class="server-node-meta">DATA.ROUTER // META_CAPI_V2</span>
+                        <div class="flex items-center gap-3 w-[70%] justify-end">
                             <div class="progress-bar-wrapper">
                                 <div class="progress-fill-node bg-[#FF6A00]" style="width: 88%"></div>
                             </div>
-                            <span class="font-mono text-[10px] text-gray-400">88%</span>
+                            <span class="server-percentage-value">88%</span>
                         </div>
                     </div>
                     <div class="progress-bar-row">
-                        <span class="font-mono text-[10px] text-gray-500">GOOGLE CLOUD SERVER</span>
-                        <div class="progress-wrapper-container flex items-center justify-end gap-3 w-[70%]">
+                        <span class="server-node-meta">DATA.ROUTER // GOOGLE_SERVER_SIDE</span>
+                        <div class="flex items-center gap-3 w-[70%] justify-end">
                             <div class="progress-bar-wrapper">
                                 <div class="progress-fill-node bg-blue-500" style="width: 74%"></div>
                             </div>
-                            <span class="font-mono text-[10px] text-gray-400">74%</span>
+                            <span class="server-percentage-value">74%</span>
                         </div>
                     </div>
                     <div class="progress-bar-row">
-                        <span class="font-mono text-[10px] text-gray-500">TIKTOK ALGORITHM API</span>
-                        <div class="progress-wrapper-container flex items-center justify-end gap-3 w-[70%]">
+                        <span class="server-node-meta">DATA.ROUTER // TIKTOK_CONVERSIONS</span>
+                        <div class="flex items-center gap-3 w-[70%] justify-end">
                             <div class="progress-bar-wrapper">
-                                <div class="progress-fill-node bg-emerald-500" style="width: 93%"></div>
+                                <div class="progress-fill-node bg-emerald-400" style="width: 93%"></div>
                             </div>
-                            <span class="font-mono text-[10px] text-gray-400">93%</span>
+                            <span class="server-percentage-value">93%</span>
                         </div>
                     </div>
                 </div>

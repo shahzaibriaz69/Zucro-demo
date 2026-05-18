@@ -306,155 +306,214 @@ body {
 }
 
 /* Hero Live Mockup Console Display */
+/* ==========================================================================
+   🚨 SYSTEM UPGRADE: ULTRA-LUXURY TECH TELEMETRY CORE CONSOLE
+   ========================================================================== */
 .mockup-console-box {
     width: 100%;
     max-width: 580px;
-    background: linear-gradient(135deg, rgba(11, 27, 43, 0.7) 0%, rgba(5, 13, 21, 0.9) 100%);
-    border: 1px solid rgba(255, 106, 0, 0.15);
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8),
-                0 0 50px -10px rgba(255, 106, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: radial-gradient(120% 120% at 50% 10%, rgba(13, 27, 42, 0.8) 0%, rgba(3, 7, 12, 0.95) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 2.25rem 2rem;
     position: relative;
+    box-shadow: 
+        0 0 0 1px rgba(255, 106, 0, 0.05),
+        0 20px 50px -12px rgba(0, 0, 0, 0.9),
+        0 0 60px -20px rgba(255, 106, 0, 0.15);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     overflow: hidden;
     box-sizing: border-box;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Futuristic subtle top edge light border effect */
+/* Mouse hover side glowing reflection effect */
+.mockup-console-box:hover {
+    border-color: rgba(255, 106, 0, 0.25);
+    box-shadow: 
+        0 0 0 1px rgba(255, 106, 0, 0.1),
+        0 30px 60px -15px rgba(0, 0, 0, 0.95),
+        0 0 80px -15px rgba(255, 106, 0, 0.25);
+}
+
+/* Top linear neon light beam tracer */
 .mockup-console-box::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 10%;
+    right: 10%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 106, 0, 0.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 106, 0, 0.5), rgba(74, 222, 128, 0.3), transparent);
 }
 
+/* Header Grid Structure */
 .console-header-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding-bottom: 1.25rem;
-    margin-bottom: 1.75rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .window-dots-flex { 
     display: flex; 
     align-items: center; 
-    gap: 0.6rem; 
+    gap: 0.5rem; 
 }
 
 .window-dot { 
-    width: 10px; 
-    height: 10px; 
+    width: 9px; 
+    height: 9px; 
     border-radius: 50%; 
+    opacity: 0.75;
 }
 
 .console-title-text {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.75rem;
-    color: #6B7280;
-    letter-spacing: 1px;
+    font-family: 'JetBrains Mono', monospace, ui-monospace;
+    font-size: 11px;
+    color: #4B5563;
+    letter-spacing: 0.05em;
+    font-weight: 500;
 }
 
-/* Core Tech Grid Configuration */
+/* Premium Fluid Metric Tiles System */
 .mockup-metrics-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 1.25rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 2.25rem;
 }
 
 .metric-tile {
-    background: rgba(5, 13, 21, 0.4);
+    background: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.03);
-    border-radius: 14px;
-    padding: 1.25rem 1rem;
+    border-radius: 16px;
+    padding: 1.5rem 1.25rem;
     position: relative;
-    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
-.metric-tile:hover {
-    background: rgba(19, 42, 66, 0.3);
-    border-color: rgba(255, 106, 0, 0.2);
-    transform: translateY(-2px);
+/* Subtle inner vignette shadow gradient for tech aesthetics */
+.metric-tile::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(100% 100% at 50% 0%, transparent 80%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
 }
 
 .metric-label {
+    font-family: 'Inter', sans-serif;
     font-size: 10px !important;
-    color: #9CA3AF;
+    color: #6B7280;
     text-transform: uppercase;
-    tracking-content: 0.1em;
-    font-weight: 700;
+    letter-spacing: 0.12em;
+    font-weight: 600;
 }
 
 .metric-value-wrapper {
-    font-size: 1.625rem !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem !important;
     font-weight: 800;
+    letter-spacing: -0.03em;
     color: #FFFFFF;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
     display: flex;
     align-items: baseline;
-    gap: 0.25rem;
 }
 
-/* Micro Status Spark-indicator badges */
+/* Floating Status Spark Pill Badges */
 .metric-trend-badge {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 600;
-    padding: 2px 6px;
-    border-radius: 6px;
-    margin-top: 0.5rem;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    margin-top: 0.75rem;
     display: inline-flex;
     align-items: center;
     gap: 4px;
+    border: 1px solid transparent;
 }
-.trend-up { background: rgba(34, 197, 94, 0.1); color: #22C55E; }
-.trend-orange { background: rgba(255, 106, 0, 0.1); color: #FF6A00; }
+.trend-up { 
+    background: rgba(74, 222, 128, 0.04); 
+    color: #4ADE80; 
+    border-color: rgba(74, 222, 128, 0.1);
+}
+.trend-orange { 
+    background: rgba(255, 106, 0, 0.04); 
+    color: #FF6A00; 
+    border-color: rgba(255, 106, 0, 0.1);
+}
 
-/* Glowing Live Tracking Badge */
+/* Pulsing Core Live Feed Chip */
 .live-glow-badge {
-    background: rgba(34, 197, 94, 0.08);
-    border: 1px solid rgba(34, 197, 94, 0.2);
+    background: radial-gradient(rgba(34, 197, 94, 0.15), transparent);
+    border: 1px solid rgba(34, 197, 94, 0.25);
     color: #4ADE80;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     padding: 4px 12px;
-    border-radius: 8px;
-    font-family: monospace;
-    box-shadow: 0 0 15px rgba(34, 197, 94, 0.1);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
 }
 
-/* Premium Simulated Progress Bars Engine */
+/* Telemetry Server Loading Bar Matrices */
 .console-progress-trackers {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.85rem;
 }
 .progress-bar-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 11px;
+}
+.server-node-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
     color: #4B5563;
+    letter-spacing: 0.02em;
 }
 .progress-bar-wrapper {
-    width: 70%;
-    height: 6px;
-    background: rgba(255, 255, 255, 0.03);
+    width: 65%;
+    height: 4px; /* Super elegant razor thin bar */
+    background: rgba(255, 255, 255, 0.02);
     border-radius: 9999px;
     overflow: hidden;
+    position: relative;
 }
 .progress-fill-node {
     height: 100%;
     border-radius: 9999px;
+    position: relative;
+}
+/* Cyberpunk scanning glow pulse inside lines */
+.progress-fill-node::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform: translateX(-100%);
+    animation: data-scan 2.5s infinite linear;
+}
+@keyframes data-scan {
+    100% { transform: translateX(100%); }
 }
 
-/* Responsive Overrides */
+.server-percentage-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #9CA3AF;
+    width: 30px;
+    text-align: right;
+}
+
+/* Responsive Fluid Viewport Adapters */
 @media (max-width: 640px) {
     .mockup-metrics-grid {
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
@@ -463,9 +522,9 @@ body {
     .console-header-flex {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        gap: 1.25rem;
     }
-    .live-glow-badge { margin-top: 0.25rem; }
+    .progress-bar-wrapper { width: 55%; }
 }
 .metric-tile {
     background: rgba(5, 13, 21, 0.6);
