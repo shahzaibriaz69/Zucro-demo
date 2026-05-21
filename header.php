@@ -33,39 +33,41 @@
     <header class="premium-navbar-header">
         <div class="zucro-container navbar-wrapper">
 
-            <a href="#" class="nav-logo-text">
+            <a href="index.php" class="nav-logo-text">
                 <span class="text-[#FF6A00]">ZUCRO</span>EXPERTS
             </a>
 
-
             <nav class="hidden md:flex desktop-nav-menu">
-                <a href="#services">Services</a>
-                <a href="#growth-solutions">AI Systems</a> <a href="#crm">GHL CRM</a>
-                <a href="#reality-check-leaks">Why Us</a> <a href="#pricing">Pricing</a>
-                <a href="#contact">Contact</a>
+                <a href="index.php#services">Services</a>
+                <a href="index.php#growth-solutions">AI Systems</a>
+                <a href="index.php#crm">GHL CRM</a>
+                <a href="index.php#reality-check-leaks">Why Us</a>
+                <a href="pricing.php">Pricing</a>
+                <a href="index.php#contact">Contact</a>
             </nav>
 
-
             <div class="hidden md:block">
-                <a href="#contact" class="btn-zucro-primary">
+                <a href="index.php#contact" class="btn-zucro-primary">
                     Book Free Strategy Call
                 </a>
             </div>
 
-
-            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
                 <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
 
-
         <div id="mobile-menu" class="mobile-dropout-drawer">
-            <a href="#services" class="mobile-link text-gray-300 block py-2">Services</a>
-            <a href="#growth-solutions" class="mobile-link text-gray-300 block py-2">AI Systems</a> <a href="#crm"
-                class="mobile-link text-gray-300 block py-2">GHL CRM</a>
-            <a href="#reality-check-leaks">Why Us</a> <a href="#pricing">Pricing</a>
-            <a href="#contact">Contact</a>
+            <a href="index.php#services" class="mobile-link text-gray-300 block py-2">Services</a>
+            <a href="index.php#growth-solutions" class="mobile-link text-gray-300 block py-2">AI Systems</a>
+            <a href="index.php#crm" class="mobile-link text-gray-300 block py-2">GHL CRM</a>
+            <a href="index.php#reality-check-leaks" class="mobile-link text-gray-300 block py-2">Why Us</a>
+            <a href="pricing.php" class="mobile-link text-gray-300 block py-2">Pricing</a>
+            <a href="index.php#contact" class="mobile-link text-gray-300 block py-2">Contact</a>
+            <div class="pt-4 border-t border-white/5 mt-2">
+                <a href="index.php#contact" class="btn-zucro-primary block text-center text-xs py-2.5">
+                    Book Free Strategy Call
+                </a>
+            </div>
         </div>
-
-
     </header>

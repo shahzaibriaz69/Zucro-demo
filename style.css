@@ -674,39 +674,342 @@ body {
 @media (max-width: 640px) { .crm-blocks-quad-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 
 
-.pricing-section-frame { padding: 6rem 0; }
-.pricing-tri-matrix-grid {
+
+.pricing-section-frame {
+    position: relative;
+    padding: 6rem 0;
+    background-color: #03070C;
+    overflow: hidden;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.pricing-ambient-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 120%, rgba(255, 106, 0, 0.06), transparent 60%);
+    pointer-events: none;
+}
+
+.pricing-inner-wrapper {
+    position: relative;
+    z-index: 10;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+
+/* Header Area Styles */
+.pricing-section-header {
+    text-align: center;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+.pricing-badge-accent {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+    color: #FF6A00;
+    background-color: rgba(255, 106, 0, 0.1);
+    border: 1px solid rgba(255, 106, 0, 0.2);
+    border-radius: 9999px;
+    text-transform: uppercase;
+}
+
+.pricing-main-heading {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.text-orange-glow {
+    color: #FF6A00;
+}
+
+.pricing-sub-paragraph {
+    color: #9CA3AF;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+
+.currency-switcher-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.currency-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4B5563;
+    transition: color 0.3s ease;
+}
+
+.currency-label.active-mode {
+    color: #FF6A00;
+    font-weight: 700;
+}
+
+.toggle-track-btn {
+    width: 3.5rem;
+    height: 1.75rem;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.25rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-track-btn:hover {
+    border-color: rgba(255, 106, 0, 0.4);
+    box-shadow: 0 0 15px rgba(255, 106, 0, 0.1);
+}
+
+.toggle-thumb-node {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: #FF6A00;
+    box-shadow: 0 0 12px rgba(255, 106, 0, 0.6);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(0);
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.pricing-cards-matrix-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
-    max-width: 64rem;
-    margin: 0 auto;
-    align-items: center;
+    align-items: stretch;
 }
-@media (max-width: 768px) { .pricing-tri-matrix-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 3rem; } }
 
-.pricing-card-highlighted {
-    border: 2px solid rgba(255, 106, 0, 0.8);
-    box-shadow: 0 0 30px rgba(255, 106, 0, 0.15);
+
+.premium-pricing-card {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
 }
-@media (min-width: 768px) {
-    .pricing-card-highlighted { transform: translateY(-1rem); }
+
+.premium-pricing-card:hover {
+    border-color: rgba(255, 106, 0, 0.2);
 }
-.premium-pricing-ribbon {
+
+.card-featured-accent {
+    border-color: rgba(255, 106, 0, 0.3);
+    background: linear-gradient(to bottom, rgba(19, 42, 66, 0.1), transparent);
+    box-shadow: 0 20px 50px rgba(255, 106, 0, 0.05);
+}
+
+
+.card-popular-badge {
     position: absolute;
-    top: -1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #FF6A00;
-    color: #FFFFFF;
-    font-size: 10px;
+    top: -0.75rem;
+    left: 1.5rem;
+    padding: 0.15rem 0.75rem;
+    font-size: 9px;
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 800;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding: 0.25rem 1rem;
+    color: #000000;
+    background-color: #FF6A00;
+    border-radius: 6px;
+    text-transform: uppercase;
+    z-index: 20;
+}
+
+.card-meta-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #6B7280;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.currency-price {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: baseline;
+    transition: opacity 0.2s ease;
+}
+
+.price-suffix {
+    color: #FF6A00;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: 0.25rem;
+}
+
+.card-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+
+.card-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-feature-list li {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    color: #9CA3AF;
+    margin-bottom: 0.875rem;
+    line-height: 1.4;
+}
+
+.check-icon, .bolt-icon {
+    color: #FF6A00;
+    margin-top: 0.2rem;
+}
+
+
+.btn-card-secondary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.75rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.premium-pricing-card:hover .btn-card-secondary {
+    background-color: #FF6A00;
+    border-color: #FF6A00;
+}
+
+.btn-card-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.75rem;
+    margin-top: 2rem;
+    background-color: #FF6A00;
+    border: 1px solid #FF6A00;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 106, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-card-primary:hover {
+    box-shadow: 0 0 30px rgba(255, 106, 0, 0.4);
+}
+
+
+.explore-action-container {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-explore-packages {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 9999px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+
+.btn-explore-packages:hover {
+    background-color: #FF6A00;
+    border-color: #FF6A00;
+    box-shadow: 0 10px 30px rgba(255, 106, 0, 0.25);
+}
+
+.arrow-slide-icon {
+    font-size: 0.75rem;
+    color: #FF6A00;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-explore-packages:hover .arrow-slide-icon {
+    transform: translateX(6px);
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 1024px) {
+    .pricing-cards-matrix-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-cards-matrix-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+    }
+    .pricing-main-heading {
+        font-size: 1.875rem;
+    }
 }
 
 

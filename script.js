@@ -158,3 +158,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
         modalActionBtn.addEventListener("click", closeModal);
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("currency-toggle-btn");
+    const switcherCircle = document.getElementById("switcher-circle");
+    const labelUsd = document.getElementById("label-usd");
+    const labelPkr = document.getElementById("label-pkr");
+    const priceElements = document.querySelectorAll(".currency-price");
+
+    if (toggleBtn && switcherCircle) {
+        let isPkr = false;
+
+        toggleBtn.addEventListener("click", () => {
+            isPkr = !isPkr;
+
+            if (isPkr) {
+                // Switch to PKR layout frame
+                switcherCircle.style.transform = "translateX(28px)";
+                labelPkr.classList.add("text-[#FF6A00]", "font-bold");
+                labelPkr.classList.remove("text-gray-500");
+                labelUsd.classList.add("text-gray-500");
+                labelUsd.classList.remove("text-[#FF6A00]", "font-bold");
+            } else {
+                // Switch to USD layout frame
+                switcherCircle.style.transform = "translateX(0px)";
+                labelUsd.classList.add("text-[#FF6A00]", "font-bold");
+                labelUsd.classList.remove("text-gray-500");
+                labelPkr.classList.add("text-gray-500");
+                labelPkr.classList.remove("text-[#FF6A00]", "font-bold");
+            }
+
+            // Animate and update element inner metrics text securely
+            priceElements.forEach(el => {
+                el.style.opacity = "0";
+                setTimeout(() => {
+                    const suffix = el.id.includes("webdev") ? " / start" : " / mo";
+                    if (isPkr) {
+                        el.innerHTML = `${el.getAttribute("data-pkr")}<span class="text-[#FF6A00] font-light text-base ml-1">${suffix}</span>`;
+                    } else {
+                        el.innerHTML = `${el.getAttribute("data-usd")}<span class="text-[#FF6A00] font-light text-base ml-1">${suffix}</span>`;
+                    }
+                    el.style.opacity = "1";
+                }, 150);
+            });
+        });
+    }
+});

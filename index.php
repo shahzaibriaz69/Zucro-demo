@@ -352,52 +352,106 @@
 </section>
 
 
-<section id="pricing" class="pricing-section-frame">
-    <div class="zucro-container">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold text-white mb-4 reveal-on-scroll">Direct Production Systems Pricing</h2>
-            <p class="text-gray-400 max-w-xl mx-auto text-sm reveal-on-scroll">Premium digital architectural design
-                frameworks scaling paths matched precisely around targeted tier specs metrics requirements.</p>
-        </div>
+<section id="pricing" class="pricing-section-frame reveal-on-scroll">
+    <div class="pricing-ambient-glow"></div>
 
-        <div class="pricing-tri-matrix-grid">
+    <div class="zucro-container pricing-inner-wrapper">
 
-            <div class="premium-glass-card p-8 reveal-on-scroll">
-                <h4 class="text-white text-lg font-bold">BASIC OPS</h4>
-                <div class="my-4"><span class="text-3xl font-extrabold text-white">$200</span><span
-                        class="text-xs text-gray-500"> / mo</span></div>
-                <p class="text-xs text-gray-400 mb-6">Single platform ad campaign setup and foundational target metrics
-                    reporting infrastructure.</p>
-                <a href="#contact"
-                    class="block text-center text-xs text-white bg-white/10 py-3 rounded-lg hover:bg-[#FF6A00] transition font-bold">Deploy
-                    Basic Stack</a>
-            </div>
+        <div class="pricing-section-header">
+            <span class="pricing-badge-accent">
+                Flexible Investment Scalability
+            </span>
+            <h2 class="pricing-main-heading">
+                Transparent Packages Built For <span class="text-orange-glow">Predictable ROI</span>
+            </h2>
+            <p class="pricing-sub-paragraph">
+                No hidden operational retention leaks. Select your baseline framework model or toggle standard local
+                currencies instantly.
+            </p>
 
-
-            <div class="premium-glass-card p-8 pricing-card-highlighted reveal-on-scroll">
-                <div class="premium-pricing-ribbon">Most Popular Strategy</div>
-                <h4 class="text-white text-lg font-bold">STANDARD STACK</h4>
-                <div class="my-4"><span class="text-4xl font-extrabold text-white">$350</span><span
-                        class="text-xs text-gray-500"> / mo</span></div>
-                <p class="text-xs text-gray-400 mb-6">Multi platform configuration, full backend programmatic engine
-                    retargeting models deployment framework.</p>
-                <a href="#contact"
-                    class="block text-center text-xs text-white bg-[#FF6A00] py-3 rounded-lg transition font-bold">Deploy
-                    Standard Stack</a>
-            </div>
-
-
-            <div class="premium-glass-card p-8 reveal-on-scroll">
-                <h4 class="text-white text-lg font-bold">PREMIUM MASTER</h4>
-                <div class="my-4"><span class="text-3xl font-extrabold text-white">$500</span><span
-                        class="text-xs text-gray-500"> / mo</span></div>
-                <p class="text-xs text-gray-400 mb-6">Full conversion funnel system deployment, unified CRM automation,
-                    and priority volume scaling optimization support.</p>
-                <a href="#contact"
-                    class="block text-center text-xs text-white bg-white/10 py-3 rounded-lg hover:bg-[#FF6A00] transition font-bold">Deploy
-                    Premium System</a>
+            <div class="currency-switcher-container">
+                <span class="currency-label active-mode" id="label-usd">Global USD ($)</span>
+                <button id="currency-toggle-btn" class="toggle-track-btn" aria-label="Toggle Currency">
+                    <div id="switcher-circle" class="toggle-thumb-node"></div>
+                </button>
+                <span class="currency-label" id="label-pkr">Maqami PKR (Rs)</span>
             </div>
         </div>
+
+        <div class="pricing-cards-matrix-grid">
+
+            <div class="premium-pricing-card">
+                <div class="card-body-top">
+                    <div class="card-meta-tag">// ADVERTISING ENGINE</div>
+                    <h3 class="card-title">Digital Marketing</h3>
+                    <div class="currency-price" id="price-marketing" data-usd="$500" data-pkr="PKR 60,000">
+                        $500<span class="price-suffix">/ mo</span>
+                    </div>
+                    <hr class="card-divider">
+                    <ul class="card-feature-list">
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>Facebook, Instagram & TikTok Ads</span>
+                        </li>
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>Google & YouTube Ads Integration</span>
+                        </li>
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>Advanced Sales Funnel Strategy</span>
+                        </li>
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>Retargeting Campaigns Matrix</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-card-secondary">Deploy Premium Ads</a>
+            </div>
+
+            <div class="premium-pricing-card card-featured-accent">
+                <span class="card-popular-badge">Most Demanded</span>
+                <div class="card-body-top">
+                    <div class="card-meta-tag text-orange-glow">// FULL STACK SCALING</div>
+                    <h3 class="card-title">eCommerce Management</h3>
+                    <div class="currency-price" id="price-ecommerce" data-usd="$650" data-pkr="PKR 80,000">
+                        $650<span class="price-suffix">/ mo</span>
+                    </div>
+                    <hr class="card-divider">
+                    <ul class="card-feature-list">
+                        <li><i class="fas fa-bolt bolt-icon"></i> <span>Full Shopify Store Management</span></li>
+                        <li><i class="fas fa-bolt bolt-icon"></i> <span>Amazon PL & TikTok Shop Scaling</span></li>
+                        <li><i class="fas fa-bolt bolt-icon"></i> <span>Winning Product Research Diagnostics</span></li>
+                        <li><i class="fas fa-bolt bolt-icon"></i> <span>Advanced Product SEO & CRO Mockups</span></li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-card-primary">Scale My Digital Store</a>
+            </div>
+
+            <div class="premium-pricing-card">
+                <div class="card-body-top">
+                    <div class="card-meta-tag">// HIGH-CODE SYSTEM</div>
+                    <h3 class="card-title">Website Development</h3>
+                    <div class="currency-price" id="price-webdev" data-usd="$1,000" data-pkr="PKR 80,000">
+                        $1,000<span class="price-suffix">/ start</span>
+                    </div>
+                    <hr class="card-divider">
+                    <ul class="card-feature-list">
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>Custom Coded Dynamic Node
+                                Website</span></li>
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>Advanced Enterprise UI/UX Core
+                                Design</span></li>
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>Secure Admin Dashboards & APIs</span>
+                        </li>
+                        <li><i class="fas fa-check-circle check-icon"></i> <span>High-Speed Performance Frame
+                                Lock</span></li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-card-secondary">Launch Custom System</a>
+            </div>
+
+        </div>
+
+        <div class="explore-action-container">
+            <a href="pricing.php" class="btn-explore-packages">
+                Explore All Premium Packages
+                <i class="fas fa-arrow-right arrow-slide-icon"></i>
+            </a>
+        </div>
+
     </div>
 </section>
 
