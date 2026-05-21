@@ -251,61 +251,106 @@
 
 <section id="services" class="services-section-frame">
     <div class="zucro-container">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold text-white mb-4 reveal-on-scroll">Multi-Platform Advertising Solutions
+
+        <div style="text-align: center; margin-bottom: 4rem;" class="reveal-on-scroll">
+            <h2
+                style="font-size: 2.25rem; font-weight: 800; color: #FFFFFF; margin-bottom: 1rem; letter-spacing: -0.02em;">
+                Multi-Platform Advertising Solutions
             </h2>
-            <p class="text-gray-400 max-w-2xl mx-auto reveal-on-scroll">Advanced multi-platform advertising targeting
-                models optimized with premium algorithmic frameworks for scaling performance KPIs.</p>
+            <p style="color: #9CA3AF; max-width: 42rem; margin: 0 auto; font-size: 0.875rem; line-height: 1.6;">
+                Advanced multi-platform advertising targeting models optimized with premium algorithmic frameworks for
+                scaling performance KPIs.
+            </p>
         </div>
 
         <div class="services-hex-grid">
 
-            <div class="premium-glass-card p-6 service-matrix-card reveal-on-scroll">
+            <div class="premium-glass-card service-matrix-card reveal-on-scroll" style="padding: 2rem;">
                 <div>
-                    <div class="service-icon-box bg-blue-600/20 text-blue-500"><i class="fab fa-facebook-f"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-2">Meta Ads Matrix</h3>
-                    <p class="text-xs text-[#FF6A00] mb-4 uppercase font-semibold">High-Converting Social Media Ads</p>
-                    <p class="text-sm text-gray-400 mb-6">We turn social media into a sales machine using advanced
-                        targeting and conversion strategies.</p>
+                    <div class="service-icon-box" style="background-color: rgba(37, 99, 235, 0.15); color: #3B82F6;">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 0.5rem;">Social
+                        Media Management</h3>
+                    <p
+                        style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: #FF6A00; margin-bottom: 1rem; letter-spacing: 0.05em;">
+                        Organic Growth Strategy</p>
+                    <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5; margin-bottom: 1.5rem;">
+                        We turn social media into an organic conversion engine using tactical content, aesthetics, and
+                        algorithmic scheduling mechanics.
+                    </p>
+
                     <ul class="service-bullet-list">
-                        <li><i class="fas fa-check text-[#FF6A00] mr-2"></i> Sales & Lead Generation Ads</li>
-                        <li><i class="fas fa-check text-[#FF6A00] mr-2"></i> Retargeting & Pixel Tracking</li>
+                        <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>Organic
+                                Post & Video Curation</span></li>
+                        <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>Audience
+                                Retention & Scheduling</span></li>
                     </ul>
                 </div>
-                <a href="#contact" class="service-deploy-btn">Deploy Meta Engine</a>
+                <a href="#contact" class="service-deploy-btn">Deploy Management Engine</a>
             </div>
 
+            <div class="premium-glass-card service-matrix-card reveal-on-scroll"
+                style="padding: 2rem; position: relative; background: background-color: rgba(37, 99, 235, 0.15); color: #3B82F6;">
 
-            <div class="premium-glass-card p-6 service-matrix-card reveal-on-scroll">
+                <span
+                    style="position: absolute; top: -0.75rem; left: 1.5rem; padding: 0.15rem 0.75rem; font-size: 9px; font-family: 'JetBrains Mono', monospace; font-weight: 800; letter-spacing: 0.1em; color: #000000; background-color: #FF6A00; border-radius: 6px; text-transform: uppercase; z-index: 20;">
+                    High ROI Focus
+                </span>
+
                 <div>
-                    <div class="service-icon-box bg-red-600/20 text-red-500"><i class="fab fa-google"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-2">Google Advertising</h3>
-                    <p class="text-xs text-[#FF6A00] mb-4 uppercase font-semibold">High Intent Customer Acquisition</p>
-                    <p class="text-sm text-gray-400 mb-6">We capture customers who are actively searching for your
-                        specific professional services.</p>
+                    <div class="service-icon-box" style="background-color: rgba(239, 68, 68, 0.15); color: #EF4444;">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 0.5rem;">Social
+                        Media Marketing</h3>
+                    <p
+                        style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: #FF6A00; margin-bottom: 1rem; letter-spacing: 0.05em;">
+                        Paid Ads Optimization</p>
+                    <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5; margin-bottom: 1.5rem;">
+                        We capture active high-intent clients who are ready to scale using custom-built conversion
+                        funnels and hyper-targeted budgets.
+                    </p>
+
                     <ul class="service-bullet-list">
-                        <li><i class="fas fa-check text-[#FF6A00] mr-2"></i> Search / Display / Performance Max</li>
-                        <li><i class="fas fa-check text-[#FF6A00] mr-2"></i> Conversion Tag Optimization</li>
+                        <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>Meta &
+                                Google Campaigns</span></li>
+                        <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>Advanced
+                                Funnel Retargeting</span></li>
                     </ul>
                 </div>
-                <a href="#contact" class="service-deploy-btn">Deploy Google Engine</a>
+
+                <a href="#contact" class="service-deploy-btn"
+                    style="background-color: #FF6A00; color: #FFFFFF; border-color: #FF6A00;">
+                    Deploy Marketing Engine
+                </a>
             </div>
 
-
-            <div class="premium-glass-card p-6 service-matrix-card reveal-on-scroll">
+            <div class="premium-glass-card service-matrix-card reveal-on-scroll" style="padding: 2rem;">
                 <div>
-                    <div class="service-icon-box bg-purple-600/20 text-purple-400"><i class="fas fa-code"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-2">Web Engineering</h3>
-                    <p class="text-xs text-[#FF6A00] mb-4 uppercase font-semibold">Conversion-Focused Website System</p>
-                    <p class="text-sm text-gray-400 mb-6">We build clean, rapid, responsive frameworks engineered
-                        natively for direct operational leads metrics capture.</p>
+                    <div class="service-icon-box" style="background-color: rgba(147, 51, 234, 0.15); color: #C084FC;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 0.5rem;">Web
+                        Engineering</h3>
+                    <p
+                        style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: #FF6A00; margin-bottom: 1rem; letter-spacing: 0.05em;">
+                        Conversion-Focused Systems</p>
+                    <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5; margin-bottom: 1.5rem;">
+                        We build clean, rapid, responsive structures engineered natively for digital business tracking
+                        and direct leads capture.
+                    </p>
+
                     <ul class="service-bullet-list">
-                        <li><i class="fas fa-check text-[#FF6A00] mr-2"></i> Performance Optimized HTML/PHP</li>
-                        <li><i class="fas fa-check text-[#FF6A00] mr-2"></i> WhatsApp API Integration Engine</li>
+                        <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>Performance
+                                Optimized HTML/PHP</span></li>
+                        <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>WhatsApp
+                                API Integration Engine</span></li>
                     </ul>
                 </div>
                 <a href="#contact" class="service-deploy-btn">Deploy Custom Website</a>
             </div>
+
         </div>
     </div>
 </section>

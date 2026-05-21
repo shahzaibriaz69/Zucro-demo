@@ -663,6 +663,30 @@ body {
 }
 .service-deploy-btn:hover { background-color: #FF6A00; color: #FFFFFF; }
 
+.blue-icon-modifier {
+    background-color: rgba(37, 99, 235, 0.15);
+    color: #3B82F6;
+}
+
+.red-icon-modifier {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #EF4444;
+}
+
+.purple-icon-modifier {
+    background-color: rgba(147, 51, 234, 0.15);
+    color: #C084FC;
+}
+
+/* --- Center Card Special Featured Button Modifier --- */
+.service-deploy-btn.featured-btn-modifier {
+    background-color: #FF6A00;
+    color: #FFFFFF;
+    border-color: #FF6A00;
+}
+.service-deploy-btn.featured-btn-modifier:hover {
+    box-shadow: 0 0 20px rgba(255, 106, 0, 0.4);
+}
 
 .crm-section-frame { padding: 6rem 0; }
 .crm-blocks-quad-grid {
