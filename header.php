@@ -38,7 +38,7 @@
             </a>
 
             <nav class="hidden md:flex desktop-nav-menu">
-                <a href="index.php#services">Services</a>
+                <a href="services.php#services">Services</a>
                 <a href="index.php#growth-solutions">AI Systems</a>
                 <a href="index.php#crm">GHL CRM</a>
                 <a href="index.php#reality-check-leaks">Why Us</a>

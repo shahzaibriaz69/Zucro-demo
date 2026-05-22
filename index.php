@@ -350,8 +350,15 @@
                 </div>
                 <a href="#contact" class="service-deploy-btn">Deploy Custom Website</a>
             </div>
-
         </div>
+
+        <div class="explore-action-container">
+            <a href="services.php" class="btn-explore-packages">
+                Explore All Services
+                <i class="fas fa-arrow-right arrow-slide-icon"></i>
+            </a>
+        </div>
+
     </div>
 </section>
 
