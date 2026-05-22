@@ -64,7 +64,7 @@
                         </ul>
 
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -91,7 +91,7 @@
                         </ul>
 
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -118,7 +118,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
 
@@ -161,7 +161,7 @@
                                     Target Audience Parsing</span></li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -188,7 +188,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -213,7 +213,7 @@
                                     Insights Reports</span></li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
 
@@ -256,7 +256,7 @@
                                     Pipeline Management</span></li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -281,7 +281,7 @@
                                     Call Text-Back Setup</span></li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -306,7 +306,7 @@
                                     GTM Conversion Mapping</span></li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
 
@@ -348,7 +348,7 @@
                                     API Configurations</span></li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -374,7 +374,7 @@
                                     Gateways & WhatsApp Triggers</span></li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -401,7 +401,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
+                    <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
 
