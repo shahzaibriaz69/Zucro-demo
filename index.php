@@ -516,32 +516,37 @@
             <p class="text-xs text-gray-400 mb-6">Submit your current parameters specs layout and our automation
                 specialist will deploy consultation strategies.</p>
 
-            <form action="#" method="POST" class="space-y-4">
+            <form action="submit_lead.php" method="POST" class="space-y-4">
                 <div class="inquiry-input-group">
                     <label class="inquiry-field-label">Full Name</label>
-                    <input type="text" required class="inquiry-text-field" placeholder="John Doe">
+                    <input type="text" name="client_name" required class="inquiry-text-field" placeholder="John Doe">
                 </div>
+
                 <div class="inquiry-input-group">
                     <label class="inquiry-field-label">Business Email Address</label>
-                    <input type="email" required class="inquiry-text-field" placeholder="john@company.com">
+                    <input type="email" name="client_email" required class="inquiry-text-field"
+                        placeholder="john@company.com">
                 </div>
+
                 <div class="inquiry-input-group">
                     <label class="inquiry-field-label">Growth Solution Selection</label>
-                    <select class="inquiry-text-field">
-                        <option>Multi Platform Advertising Scale Engine</option>
-                        <option>AI Automation System Architectures</option>
-                        <option>GoHighLevel CRM Setup & Flow Logic</option>
+                    <select name="service_selection" class="inquiry-text-field">
+                        <option value="Multi Platform Advertising Scale Engine">Multi Platform Advertising Scale Engine
+                        </option>
+                        <option value="AI Automation System Architectures">AI Automation System Architectures</option>
+                        <option value="GoHighLevel CRM Setup & Flow Logic">GoHighLevel CRM Setup & Flow Logic</option>
                     </select>
                 </div>
+
                 <div class="inquiry-input-group">
                     <label class="inquiry-field-label">Current Requirements Matrix</label>
-                    <textarea rows="4" required class="inquiry-text-field"
+                    <textarea name="client_message" rows="4" required class="inquiry-text-field"
                         placeholder="Tell us about your project..."></textarea>
                 </div>
+
                 <button type="submit" class="w-full btn-zucro-primary text-sm">Deploy Strategic Evaluation</button>
             </form>
         </div>
-
 
         <div class="space-y-8 reveal-on-scroll pt-4">
             <div>
