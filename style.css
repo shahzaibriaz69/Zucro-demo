@@ -355,7 +355,6 @@ body {
 }
 
 .console-title-text {
-    font-family: 'JetBrains Mono', monospace, ui-monospace;
     font-size: 11px;
     color: #4B5563;
     letter-spacing: 0.05em;
@@ -389,7 +388,6 @@ body {
 }
 
 .metric-label {
-    font-family: 'Inter', sans-serif;
     font-size: 10px !important;
     color: #6B7280;
     text-transform: uppercase;
@@ -398,7 +396,6 @@ body {
 }
 
 .metric-value-wrapper {
-    font-family: 'Inter', sans-serif;
     font-size: 1.75rem !important;
     font-weight: 800;
     letter-spacing: -0.03em;
@@ -457,7 +454,6 @@ body {
     justify-content: space-between;
 }
 .server-node-meta {
-    font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     color: #4B5563;
     letter-spacing: 0.02em;
@@ -489,7 +485,6 @@ body {
 }
 
 .server-percentage-value {
-    font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     color: #9CA3AF;
     width: 30px;
@@ -576,7 +571,7 @@ body {
     box-shadow: 0 10px 30px rgba(239, 68, 68, 0.05);
     transform: translateY(-4px);
 }
-.problem-error-code { font-family: monospace; color: #4B5563; font-size: 0.75rem; margin-bottom: 1.5rem; }
+.problem-error-code { color: #4B5563; font-size: 0.75rem; margin-bottom: 1.5rem; }
 .problem-leak-card:hover .problem-error-code { color: #EF4444; }
 .problem-card-icon-back {
     position: absolute;
@@ -705,7 +700,6 @@ body {
     background-color: #03070C;
     overflow: hidden;
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
 }
 
 .pricing-ambient-glow {
@@ -738,7 +732,6 @@ body {
     display: inline-block;
     padding: 0.25rem 0.75rem;
     font-size: 0.75rem;
-    font-family: 'JetBrains Mono', monospace;
     letter-spacing: 0.1em;
     color: #FF6A00;
     background-color: rgba(255, 106, 0, 0.1);
@@ -776,7 +769,6 @@ body {
 }
 
 .currency-label {
-    font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -864,7 +856,6 @@ body {
     left: 1.5rem;
     padding: 0.15rem 0.75rem;
     font-size: 9px;
-    font-family: 'JetBrains Mono', monospace;
     font-weight: 800;
     letter-spacing: 0.1em;
     color: #000000;
@@ -875,7 +866,6 @@ body {
 }
 
 .card-meta-tag {
-    font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     color: #6B7280;
     letter-spacing: 0.05em;

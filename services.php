@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body style="background-color: #0B111E; color: #FFFFFF; font-family: sans-serif; padding: 0; margin: 0;">
+<body style="background-color: #0B111E; color: #FFFFFF; padding: 0; margin: 0;">
 
     <div class="services-section-frame" style="padding-top: 8rem; padding-bottom: 2rem; text-align: center;">
         <div class="zucro-container">
@@ -62,7 +62,9 @@
                                 <span>Audience Network Campaigns</span>
                             </li>
                         </ul>
+
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -87,7 +89,9 @@
                             <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>YouTube
                                     Ads & Conversion Tagging</span></li>
                         </ul>
+
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -114,6 +118,7 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
             </div>
 
@@ -156,6 +161,7 @@
                                     Target Audience Parsing</span></li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -182,6 +188,7 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -206,6 +213,7 @@
                                     Insights Reports</span></li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
             </div>
 
@@ -248,6 +256,7 @@
                                     Pipeline Management</span></li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -272,6 +281,7 @@
                                     Call Text-Back Setup</span></li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -296,6 +306,7 @@
                                     GTM Conversion Mapping</span></li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
             </div>
 
@@ -337,6 +348,7 @@
                                     API Configurations</span></li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -362,6 +374,7 @@
                                     Gateways & WhatsApp Triggers</span></li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
 
                 <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
@@ -388,6 +401,7 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="pricing.php" class="service-deploy-btn">Deploy Management Engine</a>
                 </div>
             </div>
 
