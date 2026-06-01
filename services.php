@@ -1,4 +1,16 @@
-<?php include 'header.php'; ?>
+<?php
+include 'header.php';
+// 🛠️ Step 1: Database configuration file lazmi include karein
+require_once 'db_config.php';
+
+// 🛠️ Step 2: Live services matrix database pipeline se fetch karna
+try {
+    $service_query = $pdo->query("SELECT * FROM agency_services ORDER BY id DESC");
+    $dynamic_services = $service_query->fetchAll();
+} catch (PDOException $e) {
+    $dynamic_services = []; // Fallback safety matrix
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +29,7 @@
         <div class="zucro-container">
             <h1
                 style="font-size: 2.5rem; font-weight: 800; color: #FFFFFF; margin-bottom: 1rem; letter-spacing: -0.02em;">
-                <span class="text-[#FF6A00]">Our</span> Services
+                <span style="color: #FF6A00;">Our</span> Services
             </h1>
             <p style="color: #9CA3AF; max-width: 42rem; margin: 0 auto; font-size: 0.875rem; line-height: 1.6;">
                 Smart Marketing. Powerful Automation. Scalable Growth. Zucroexperts delivers tailored solutions to
@@ -28,7 +40,6 @@
 
     <section class="services-section-frame" style="padding: 2rem 0;">
         <div class="zucro-container">
-
             <div style="margin-bottom: 2.5rem; border-left: 3px solid #FF6A00; padding-left: 1rem;">
                 <h2 style="font-size: 1.5rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; margin: 0;">
                     Multi-Platform Advertising Solutions
@@ -62,7 +73,6 @@
                                 <span>Audience Network Campaigns</span>
                             </li>
                         </ul>
-
                     </div>
                     <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
@@ -89,7 +99,6 @@
                             <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>YouTube
                                     Ads & Conversion Tagging</span></li>
                         </ul>
-
                     </div>
                     <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
@@ -121,13 +130,11 @@
                     <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="services-section-frame" style="padding: 2rem 0;">
         <div class="zucro-container">
-
             <div style="margin-bottom: 2.5rem; border-left: 3px solid #FF6A00; padding-left: 1rem;">
                 <h2 style="font-size: 1.5rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; margin: 0;">
                     AI Powered Marketing Solutions
@@ -216,13 +223,11 @@
                     <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="services-section-frame" style="padding: 2rem 0;">
         <div class="zucro-container">
-
             <div style="margin-bottom: 2.5rem; border-left: 3px solid #FF6A00; padding-left: 1rem;">
                 <h2 style="font-size: 1.5rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; margin: 0;">
                     GoHighLevel (GHL) CRM & Automation
@@ -309,13 +314,11 @@
                     <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="services-section-frame" style="padding: 2rem 0;">
         <div class="zucro-container">
-
             <div style="margin-bottom: 2.5rem; border-left: 3px solid #FF6A00; padding-left: 1rem;">
                 <h2 style="font-size: 1.5rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; margin: 0;">
                     High-End Web Engineering Systems
@@ -404,9 +407,56 @@
                     <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
                 </div>
             </div>
-
         </div>
     </section>
+
+    <!-- 🚀 NEW DYNAMIC SECTION: Custom Developed & On-Demand Solutions (Exactly like others) -->
+    <?php if (!empty($dynamic_services)): ?>
+        <section class="services-section-frame" style="padding: 2rem 0;">
+            <div class="zucro-container">
+                <div style="margin-bottom: 2.5rem; border-left: 3px solid #FF6A00; padding-left: 1rem;">
+                    <h2 style="font-size: 1.5rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; margin: 0;">
+                        Custom Developed & On-Demand Solutions
+                    </h2>
+                    <p style="color: #9CA3AF; font-size: 0.875rem; margin-top: 0.25rem; margin-bottom: 0;">
+                        Dynamic operations deployed on-demand through our central database management system.
+                    </p>
+                </div>
+
+                <div class="services-hex-grid">
+                    <?php foreach ($dynamic_services as $srv): ?>
+                        <div class="premium-glass-card service-matrix-card" style="padding: 2rem;">
+                            <div>
+                                <!-- Icon and Color Accent matched to #FF6A00 -->
+                                <div class="service-icon-box"
+                                    style="background-color: rgba(255, 106, 0, 0.15); color: #FF6A00;">
+                                    <i class="<?php echo htmlspecialchars($srv['icon'] ?: 'fas fa-cogs'); ?>"></i>
+                                </div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 0.5rem;">
+                                    <?php echo htmlspecialchars($srv['title']); ?>
+                                </h3>
+                                <p
+                                    style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: #FF6A00; margin-bottom: 1rem; letter-spacing: 0.05em;">
+                                    Dynamic Business Unit
+                                </p>
+                                <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5; margin-bottom: 1.5rem;">
+                                    <?php echo htmlspecialchars($srv['description']); ?>
+                                </p>
+                                <ul class="service-bullet-list">
+                                    <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i>
+                                        <span>On-Demand Setup & Custom Integration</span></li>
+                                    <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>Managed
+                                            Control Panel Scalability</span></li>
+                                </ul>
+                            </div>
+                            <!-- Button class matched to your premium orange gradient -->
+                            <a href="#contact" class="service-deploy-btn featured-btn-modifier">Let's Discuss Project</a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
 
     <div style="padding: 4rem 0; text-align: center;">
         <div class="zucro-container">
