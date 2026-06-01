@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         $mail = new PHPMailer(true);
+        $mail->CharSet = 'UTF-8';
 
 
         $mail->isSMTP();
@@ -65,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     
                     <div style='margin-bottom: 14px;'>
                         <span style='font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: bold; display: block; margin-bottom: 2px;'>Business Email</span>
-                        <span style='font-size: 14px; color: #0f172a;'><a href='mailto:{$email}' style='color: #22d3ee; text-decoration: none; font-weight: 500;'>{$email}</a></span>
+                        <span style='font-size: 14px; color: #0f172a;'><a href='mailto:{$email}' style='color: #06b6d4; text-decoration: none; font-weight: 500;'>{$email}</a></span>
                     </div>
                     
                     <div style='margin-bottom: 14px;'>
@@ -74,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     
                     <div style='margin-bottom: 10px;'>
-                        <span style='font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: bold; display: block; margin-bottom: 4px;'>Requirements Matrix</span>
+                        <span style='font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: bold; display: block; margin-bottom: 4px;'>Requirements</span>
                         <div style='font-size: 13px; color: #334155; line-height: 1.6; background-color: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid #edf2f7; white-space: pre-line;'>{$message}</div>
                     </div>
                     
