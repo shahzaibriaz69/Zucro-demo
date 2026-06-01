@@ -49,33 +49,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isHTML(true);
         $mail->Subject = "🚀 New Lead Acquired: " . $name;
 
-
         $mail->Body = "
-            <div style='font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4;'>
-                <div style='max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 30px; border-radius: 8px; border-top: 4px solid #FF6A00;'>
-                    <h2 style='color: #111111; margin-top: 0;'>New Strategy Evaluation Request</h2>
-                    <p style='color: #555555;'>A potential client has deployed a contact parameter from the website.</p>
-                    <hr style='border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;'>
-                    <table style='width: 100%; border-collapse: collapse;'>
-                        <tr>
-                            <td style='padding: 8px 0; color: #777777; width: 30%; font-weight: bold;'>Client Name:</td>
-                            <td style='padding: 8px 0; color: #333333;'>{$name}</td>
-                        </tr>
-                        <tr>
-                            <td style='padding: 8px 0; color: #777777; font-weight: bold;'>Business Email:</td>
-                            <td style='padding: 8px 0; color: #333333;'><a href='mailto:{$email}'>{$email}</a></td>
-                        </tr>
-                        <tr>
-                            <td style='padding: 8px 0; color: #777777; font-weight: bold;'>Selected Service:</td>
-                            <td style='padding: 8px 0; color: #333333; font-weight: bold; color: #FF6A00;'>{$service}</td>
-                        </tr>
-                        <tr>
-                            <td style='padding: 8px 0; color: #777777; font-weight: bold; vertical-align: top;'>Requirements:</td>
-                            <td style='padding: 8px 0; color: #333333; line-height: 1.5;'>{$message}</td>
-                        </tr>
-                    </table>
-                    <hr style='border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;'>
-                    <p style='font-size: 11px; color: #999999; text-align: center; margin-bottom: 0;'>Zucro Experts Automated Routing System</p>
+            <div style='font-family: Arial, sans-serif; padding: 15px; background-color: #f4f4f4; margin: 0;'>
+                <div style='max-width: 550px; margin: 0 auto; background-color: #ffffff; padding: 24px; border-radius: 12px; border-top: 5px solid #FF6A00; box-shadow: 0 4px 6px rgba(0,0,0,0.05);'>
+                    
+                    <h2 style='color: #111111; margin-top: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.5px;'>New Strategy Evaluation Request</h2>
+                    <p style='color: #64748b; font-size: 13px; line-height: 1.5; margin-bottom: 20px;'>A potential client has deployed a contact parameter from the website.</p>
+                    
+                    <hr style='border: 0; border-top: 1px solid #e2e8f0; margin: 16px 0;'>
+                    
+                    <div style='margin-bottom: 14px;'>
+                        <span style='font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: bold; display: block; margin-bottom: 2px;'>Client Name</span>
+                        <span style='font-size: 14px; color: #0f172a; font-weight: 600;'>{$name}</span>
+                    </div>
+                    
+                    <div style='margin-bottom: 14px;'>
+                        <span style='font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: bold; display: block; margin-bottom: 2px;'>Business Email</span>
+                        <span style='font-size: 14px; color: #0f172a;'><a href='mailto:{$email}' style='color: #22d3ee; text-decoration: none; font-weight: 500;'>{$email}</a></span>
+                    </div>
+                    
+                    <div style='margin-bottom: 14px;'>
+                        <span style='font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: bold; display: block; margin-bottom: 2px;'>Selected Service</span>
+                        <span style='font-size: 13px; color: #FF6A00; font-weight: 700; background-color: rgba(255,106,0,0.06); padding: 3px 8px; border-radius: 4px; display: inline-block; margin-top: 2px;'>{$service}</span>
+                    </div>
+                    
+                    <div style='margin-bottom: 10px;'>
+                        <span style='font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: bold; display: block; margin-bottom: 4px;'>Requirements Matrix</span>
+                        <div style='font-size: 13px; color: #334155; line-height: 1.6; background-color: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid #edf2f7; white-space: pre-line;'>{$message}</div>
+                    </div>
+                    
+                    <hr style='border: 0; border-top: 1px solid #e2e8f0; margin: 20px 0;'>
+                    
+                    <p style='font-size: 10px; color: #94a3b8; text-align: center; margin-bottom: 0; font-family: monospace;'>Zucro Experts Automated Routing System</p>
                 </div>
             </div>
         ";
