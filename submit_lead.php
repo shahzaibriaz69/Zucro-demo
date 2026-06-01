@@ -36,16 +36,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'zucroexperts@gmail.com'; // 👈 Apni Gmail Id yahan likhein
-        $mail->Password = 'xxxx xxxx xxxx xxxx';   // 👈 Gmail ka 16-digit App Password yahan paste karein
+        $mail->Username = 'zucroexperts@gmail.com';
+        $mail->Password = 'ohkc dqrk dxyl ybaj';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
 
-        $mail->setFrom('zucroexperts@gmail.com', 'Zucro Experts System');
-        $mail->addAddress('zucroexperts@gmail.com'); // 👈 Jahan aapko notification chahiye (Aapki apni email)
+        $mail->setFrom('zucroexperts@gmail.com', 'Zucro Experts Web');
+        $mail->addAddress('zucroexperts@gmail.com');
 
-        // Email Content (HTML Template)
+
         $mail->isHTML(true);
         $mail->Subject = "🚀 New Lead Acquired: " . $name;
 
