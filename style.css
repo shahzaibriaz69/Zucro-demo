@@ -1609,3 +1609,10 @@ body {
     background-color: #22c55e;
     color: #fff;
 }
+
+.btn-login:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(255, 106, 0, 0.4),
+        0 0 25px rgba(6, 182, 212, 0.3);
+    filter: brightness(1.15);
+}
