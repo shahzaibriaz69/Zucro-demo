@@ -301,7 +301,7 @@ body {
 
 .hero-section-wrapper {
     position: relative;
-    min-h: 900px;
+    min-height: 900px;
     display: flex;
     align-items: center;
     padding: 6rem 0;

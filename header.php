@@ -45,6 +45,11 @@
                 <a href="pricing.php">Pricing</a>
                 <a href="index.php#contact">Contact</a>
             </nav>
+            <li class="nav-item">
+                <a class="nav-link" href="admin_login.php" style="color: var(--text-primary); font-weight: 600;">
+                    <i class="fas fa-user-shield" style="color: #FF6A00; margin-right: 5px;"></i> Admin
+                </a>
+            </li>
 
             <div class="hidden md:block">
                 <a href="index.php#contact" class="btn-zucro-primary">
