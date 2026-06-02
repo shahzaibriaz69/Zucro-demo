@@ -444,7 +444,8 @@ try {
                                 </p>
                                 <ul class="service-bullet-list">
                                     <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i>
-                                        <span>On-Demand Setup & Custom Integration</span></li>
+                                        <span>On-Demand Setup & Custom Integration</span>
+                                    </li>
                                     <li><i class="fas fa-check" style="color: #FF6A00; margin-right: 0.5rem;"></i> <span>Managed
                                             Control Panel Scalability</span></li>
                                 </ul>
