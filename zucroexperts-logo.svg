@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 50" width="100%" height="100%">
+  <defs>
+    <!-- Importing a clean, bold geometric font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&amp;display=swap');
+      .logo-text {
+        font-family: 'Montserrat', -apple-system, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .orange-part {
+        fill: #FF6A00; /* Matching the vibrant brand orange */
+        font-weight: 900;
+      }
+      .white-part {
+        fill: #FFFFFF;
+        font-weight: 800;
+      }
+      .icon-shape {
+        fill: #FF6A00;
+      }
+    </style>
+  </defs>
+
+  <!-- Optional Geometric Icon Mark -->
+  <g transform="translate(0, 5)">
+    <path class="icon-shape" d="M10 5H30L20 35H0L10 5Z" />
+    <path class="icon-shape" d="M22 15H37L30 35H15L22 15Z" opacity="0.8" />
+  </g>
+
+  <!-- Typography -->
+  <text x="50" y="36" class="logo-text">
+    <tspan class="orange-part">Zucro</tspan>
+    <tspan class="white-part">Experts</tspan>
+  </text>
+</svg>

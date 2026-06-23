@@ -33,10 +33,12 @@
     <header class="premium-navbar-header">
         <div class="zucro-container navbar-wrapper">
 
+            <!-- Logo -->
             <a href="index.php" class="nav-logo-text">
                 <span class="text-[#FF6A00]">ZUCRO</span>EXPERTS
             </a>
 
+            <!-- Desktop Navigation -->
             <nav class="hidden md:flex desktop-nav-menu">
                 <a href="services.php#services">Services</a>
                 <a href="index.php#growth-solutions">AI Systems</a>
@@ -45,25 +47,30 @@
                 <a href="pricing.php">Pricing</a>
                 <a href="index.php#contact">Contact</a>
             </nav>
-            <li class="nav-item">
+
+            <!-- Fixed Admin Link (Removed orphan li tag) -->
+            <div class="nav-item-admin">
                 <a class="nav-link" href="admin_login.php" style="color: var(--text-primary); font-weight: 600;">
                     <i class="fas fa-user-shield" style="color: #FF6A00; margin-right: 5px;"></i> Admin
                 </a>
-            </li>
+            </div>
 
+            <!-- CTA Button -->
             <div class="hidden md:block">
                 <a href="index.php#contact" class="btn-zucro-primary">
                     Book Free Strategy Call
                 </a>
             </div>
 
+            <!-- Hamburger Menu Toggle -->
             <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
                 <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
 
+        <!-- Mobile Drawer Menu (Fixed Services Link to services.php) -->
         <div id="mobile-menu" class="mobile-dropout-drawer">
-            <a href="index.php#services" class="mobile-link text-gray-300 block py-2">Services</a>
+            <a href="services.php#services" class="mobile-link text-gray-300 block py-2">Services</a>
             <a href="index.php#growth-solutions" class="mobile-link text-gray-300 block py-2">AI Systems</a>
             <a href="index.php#crm" class="mobile-link text-gray-300 block py-2">GHL CRM</a>
             <a href="index.php#reality-check-leaks" class="mobile-link text-gray-300 block py-2">Why Us</a>

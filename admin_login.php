@@ -3,6 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Agar pehle se logged in hai toh direct dashboard par bhej do
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
     header("Location: admin_dashboard.php");
     exit();
@@ -79,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             flex-direction: column;
             z-index: 999;
             pointer-events: none;
+            /* Allows click-through once lifted */
         }
 
         /* Split Shutter Plates */
@@ -104,6 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         .cartoon-mascot {
             position: absolute;
             bottom: -65px;
+            /* Sits right on the split line */
             left: 50%;
             transform: translateX(-50%);
             width: 130px;
@@ -443,7 +446,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="center-wrapper">
                 <span class="gate-badge"><i class="fas fa-shield-alt"></i> Auth Network Core</span>
                 <h2>Zucro Engine</h2>
-                <p class="subtitle-tracker">Enter credentials to access the admin dashboard</p>
+                <div class="subtitle-tracker">SYS.STATUS // ACTIVE_SECURE</div>
             </div>
 
             <?php if (!empty($error)): ?>
@@ -459,7 +462,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="input-wrapper">
                         <input type="text" name="username" class="form-control" placeholder="Identify Code"
                             value="admin" required autocomplete="off">
-                        <i class="fas fa-user-astronaut"></i>
+                        <i class="fas fa-fingerprint"></i>
                     </div>
                 </div>
 
@@ -467,18 +470,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <label>Passkey Token</label>
                     <div class="input-wrapper">
                         <input type="password" name="password" class="form-control" placeholder="••••••••" required>
-                        <i class="fas fa-user-secret"></i>
+                        <i class="fas fa-terminal"></i>
                     </div>
                 </div>
 
-                <button type="submit" class="btn-login">🚀 Launch Engine</button>
+                <button type="submit" class="btn-login">Initialize Session</button>
             </form>
         </div>
     </div>
 
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-
+            // Halka sa delay de kar gate open karte hain taake animation smoothly start ho
             setTimeout(() => {
                 document.getElementById('shutterGate').classList.add('active');
             }, 600);
