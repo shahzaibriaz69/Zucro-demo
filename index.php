@@ -519,22 +519,25 @@
             <form action="submit_lead.php" method="POST" class="space-y-4">
                 <div class="inquiry-input-group">
                     <label class="inquiry-field-label">Full Name</label>
-                    <input type="text" name="client_name" required class="inquiry-text-field" placeholder="John Doe">
+                    <input type="text" name="client_name" required class="inquiry-text-field" placeholder="Full Name">
                 </div>
 
                 <div class="inquiry-input-group">
                     <label class="inquiry-field-label">Business Email Address</label>
-                    <input type="email" name="client_email" required class="inquiry-text-field"
-                        placeholder="john@company.com">
+                    <input type="email" name="client_email" required class="inquiry-text-field" placeholder="Email">
                 </div>
 
                 <div class="inquiry-input-group">
                     <label class="inquiry-field-label">Growth Solution Selection</label>
                     <select name="service_selection" class="inquiry-text-field">
-                        <option value="Multi Platform Advertising Scale Engine">Multi Platform Advertising Scale Engine
-                        </option>
-                        <option value="AI Automation System Architectures">AI Automation System Architectures</option>
-                        <option value="GoHighLevel CRM Setup & Flow Logic">GoHighLevel CRM Setup & Flow Logic</option>
+                        <option value="Meta & Instagram Ads">Meta & Instagram Ads Scaling</option>
+                        <option value="Google & YouTube Marketing">Google & YouTube Advertising</option>
+                        <option value="TikTok & Social Channels">TikTok & Multi-Channel Marketing</option>
+                        <option value="AI Automation Systems">AI Automation & Workflow Systems</option>
+                        <option value="GoHighLevel CRM Setup">GoHighLevel CRM & Funnel Logic</option>
+                        <option value="Shopify Store Development">Premium Shopify E-commerce Stores</option>
+                        <option value="Amazon Growth Services">Amazon Account Management & Growth</option>
+                        <option value="Backend & Web Development">Custom Web Systems & Databases</option>
                     </select>
                 </div>
 
