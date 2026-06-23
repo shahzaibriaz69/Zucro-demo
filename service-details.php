@@ -232,7 +232,7 @@ $currentService = $servicesData[$slug];
                 style="text-decoration: none; display: inline-flex; align-items: center; background-color: transparent; border: 1px solid rgba(255,255,255,0.15); color: #FFFFFF; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.875rem; cursor: pointer; transition: background 0.2s;">
                 <i class="fas fa-arrow-left" style="margin-right: 0.5rem;"></i> All Services
             </a>
-            <a href="contact.php"
+            <a href="index.php#contact"
                 style="text-decoration: none; display: inline-flex; align-items: center; background-color: #FF6A00; color: #FFFFFF; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.875rem; cursor: pointer; transition: opacity 0.2s;">
                 Get Started <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
             </a>

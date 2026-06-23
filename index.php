@@ -36,7 +36,6 @@
                         <span class="window-dot bg-[#EF4444]"></span>
                         <span class="window-dot bg-[#F59E0B]"></span>
                         <span class="window-dot bg-[#10B981]"></span>
-                        <span class="console-title-text ml-3">CORE_LIVE_INDEX // SYSTEM.01</span>
                     </div>
                     <span class="live-glow-badge">
                         <span class="w-1.5 h-1.5 rounded-full bg-green-400 mr-2 animate-pulse"
@@ -82,7 +81,7 @@
 
                 <div class="console-progress-trackers border-t border-white/5 pt-6">
                     <div class="progress-bar-row">
-                        <span class="server-node-meta">DATA.ROUTER // META_CAPI_V2</span>
+                        <span class="server-node-meta">META_CAPI_V2</span>
                         <div class="flex items-center gap-3 w-[70%] justify-end">
                             <div class="progress-bar-wrapper">
                                 <div class="progress-fill-node bg-[#FF6A00]" style="width: 88%"></div>
@@ -91,7 +90,7 @@
                         </div>
                     </div>
                     <div class="progress-bar-row">
-                        <span class="server-node-meta">DATA.ROUTER // GOOGLE_SERVER_SIDE</span>
+                        <span class="server-node-meta">GOOGLE_SERVER_SIDE</span>
                         <div class="flex items-center gap-3 w-[70%] justify-end">
                             <div class="progress-bar-wrapper">
                                 <div class="progress-fill-node bg-blue-500" style="width: 74%"></div>
@@ -100,7 +99,7 @@
                         </div>
                     </div>
                     <div class="progress-bar-row">
-                        <span class="server-node-meta">DATA.ROUTER // TIKTOK_CONVERSIONS</span>
+                        <span class="server-node-meta">TIKTOK_CONVERSIONS</span>
                         <div class="flex items-center gap-3 w-[70%] justify-end">
                             <div class="progress-bar-wrapper">
                                 <div class="progress-fill-node bg-emerald-400" style="width: 93%"></div>
@@ -138,7 +137,7 @@
             <div class="problem-leak-card reveal-on-scroll cursor-pointer group" data-title="Running Ads, Zero Sales"
                 data-error="/ ERROR_01"
                 data-detail="Most brands burn budget sending raw traffic directly to a cold product page. Without conversion-rate optimization (CRO), persuasive copy, and clear trust triggers, 98% of users bounce. <br><br><b>The Zucro Fix:</b> We engineer high-intent landing pages with cognitive behavior formatting, layered social proof, and multi-step frictionless checkout hooks that force cold traffic to convert into immediate sales.">
-                <div class="problem-error-code">/ Problem_01</div>
+                <div class="problem-error-code">Problem_01</div>
                 <h4 class="text-lg font-bold text-gray-200 group-hover:text-[#FF6A00] transition mb-3">Running Ads, Zero
                     Sales</h4>
                 <p class="text-xs text-gray-400 leading-relaxed">Burning budget on empty vanity metrics while your
@@ -149,7 +148,7 @@
             <div class="problem-leak-card reveal-on-scroll cursor-pointer group" data-title="High Traffic, No Leads"
                 data-error="/ ERROR_02"
                 data-detail="Traffic without intentional lead capture paths is an expensive vanity project. If your page takes more than 3 seconds to load or lacks a powerful lead magnet, users instantly exit. <br><br><b>The Zucro Fix:</b> We deploy ultra-fast responsive capture matrices combined with interactive lead qualifiers, instant value-driven hooks, and exit-intent popups that capture customer meta-data securely before they abandon your platform.">
-                <div class="problem-error-code">/ Problem_02</div>
+                <div class="problem-error-code">Problem_02</div>
                 <h4 class="text-lg font-bold text-gray-200 group-hover:text-[#FF6A00] transition mb-3">High Traffic, No
                     Leads</h4>
                 <p class="text-xs text-gray-400 leading-relaxed">Thousands of random visitors bounce within 3 seconds
@@ -160,7 +159,7 @@
             <div class="problem-leak-card reveal-on-scroll cursor-pointer group" data-title="High Ad Cost (Low ROI)"
                 data-error="/ ERROR_03"
                 data-detail="Ad platforms penalize bad relevance scores with astronomical CPMs and CPCs. If your ad creatives are outdated or your audience segmentation is generic, your ROI will completely bottom out.<br><br><b>The Zucro Fix:</b> We utilize algorithmic predictive modeling and rapid matrix creative testing (running 20+ variable hooks simultaneously) to locate the lowest-cost buyer clusters, driving your customer acquisition cost (CAC) drastically down.">
-                <div class="problem-error-code">/ Problem_03</div>
+                <div class="problem-error-code">Problem_03</div>
                 <h4 class="text-lg font-bold text-gray-200 group-hover:text-[#FF6A00] transition mb-3">High Ad Cost (Low
                     ROI)</h4>
                 <p class="text-xs text-gray-400 leading-relaxed">Ad account costs are climbing daily because your
@@ -171,7 +170,7 @@
             <div class="problem-leak-card reveal-on-scroll cursor-pointer group" data-title="Blind Tracking Spills"
                 data-error="/ ERROR_04"
                 data-detail="Post-iOS14 tracking is severely broken. If you are relying solely on base standard pixels, the ad manager algorithms are optimizing blindly, spending your dollars on data anomalies.<br><br><b>The Zucro Fix:</b> We construct custom first-party data systems by integrating Meta Conversions API (CAPI) and Google Server-Side Tracking. This loops exact data back to the ad platforms securely, training the AI to chase actual buyers with 99.9% accuracy.">
-                <div class="problem-error-code">/ Problem_04</div>
+                <div class="problem-error-code">Problem_04</div>
                 <h4 class="text-lg font-bold text-gray-200 group-hover:text-[#FF6A00] transition mb-3">Blind Tracking
                     Spills</h4>
                 <p class="text-xs text-gray-400 leading-relaxed">No tracking setups mean you are scaling completely
@@ -434,7 +433,6 @@
 
             <div class="premium-pricing-card">
                 <div class="card-body-top">
-                    <div class="card-meta-tag">// ADVERTISING ENGINE</div>
                     <h3 class="card-title">Digital Marketing</h3>
                     <div class="currency-price" id="price-marketing" data-usd="$500" data-pkr="PKR 60,000">
                         $500<span class="price-suffix">/ mo</span>
@@ -457,7 +455,6 @@
             <div class="premium-pricing-card card-featured-accent">
                 <span class="card-popular-badge">Most Demanded</span>
                 <div class="card-body-top">
-                    <div class="card-meta-tag text-orange-glow">// FULL STACK SCALING</div>
                     <h3 class="card-title">eCommerce Management</h3>
                     <div class="currency-price" id="price-ecommerce" data-usd="$650" data-pkr="PKR 80,000">
                         $650<span class="price-suffix">/ mo</span>
@@ -475,7 +472,6 @@
 
             <div class="premium-pricing-card">
                 <div class="card-body-top">
-                    <div class="card-meta-tag">// HIGH-CODE SYSTEM</div>
                     <h3 class="card-title">Website Development</h3>
                     <div class="currency-price" id="price-webdev" data-usd="$1,000" data-pkr="PKR 80,000">
                         $1,000<span class="price-suffix">/ start</span>
@@ -547,7 +543,7 @@
                         placeholder="Tell us about your project..."></textarea>
                 </div>
 
-                <button type="submit" class="w-full btn-zucro-primary text-sm">Deploy Strategic Evaluation</button>
+                <button type="submit" class="w-full btn-zucro-primary text-sm">Let's Build Your System</button>
             </form>
         </div>
 

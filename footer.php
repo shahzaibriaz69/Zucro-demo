@@ -3,7 +3,7 @@
         <h2 class="text-3xl font-extrabold text-white mb-4">Stop Wasting Money On Ads That Don't Convert</h2>
         <p class="text-sm text-gray-400 mb-8">Let Zucro Experts build your complete growth system and turn your business
             into a revenue machine right now.</p>
-        <a href="#contact" class="btn-zucro-primary">Book Strategic Evaluation</a>
+        <a href="index.php#contact" class="btn-zucro-primary">Book Strategic Evaluation</a>
     </div>
 </section>
 

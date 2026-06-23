@@ -45,7 +45,6 @@
                 <div
                     class="premium-pricing-card border-white/5 group hover:border-[#FF6A00]/20 transition-all duration-500">
                     <div>
-                        <div class="font-mono text-[10px] text-gray-500 tracking-wider mb-2">// ADVERTISING ENGINE</div>
                         <h3 class="text-xl font-bold text-white mb-4">Digital Marketing</h3>
                         <div class="currency-price" id="price-marketing" data-usd="$500" data-pkr="PKR 60,000">
                             $500<span class="price-suffix">/ mo</span>
@@ -83,8 +82,6 @@
                         class="absolute -top-3 left-6 px-3 py-0.5 text-[9px] font-mono tracking-widest text-black bg-[#FF6A00] rounded-md font-extrabold uppercase z-20">Most
                         Demanded</span>
                     <div>
-                        <div class="font-mono text-[10px] text-[#FF6A00] tracking-wider mb-2">// FULL STACK SCALING
-                        </div>
                         <h3 class="text-xl font-bold text-white mb-4">eCommerce Management</h3>
                         <div class="currency-price" id="price-ecommerce" data-usd="$650" data-pkr="PKR 80,000">
                             $650<span class="price-suffix">/ mo</span>
@@ -119,7 +116,6 @@
                 <div
                     class="premium-pricing-card border-white/5 group hover:border-[#FF6A00]/20 transition-all duration-500">
                     <div>
-                        <div class="font-mono text-[10px] text-gray-500 tracking-wider mb-2">// HIGH-CODE SYSTEM</div>
                         <h3 class="text-xl font-bold text-white mb-4">Website Development</h3>
                         <div class="currency-price" id="price-webdev" data-usd="$1,000" data-pkr="PKR 80,000">
                             $1,000<span class="price-suffix">/ start</span>
@@ -154,8 +150,6 @@
                 <div
                     class="premium-pricing-card border-white/5 group hover:border-[#FF6A00]/20 transition-all duration-500">
                     <div>
-                        <div class="font-mono text-[10px] text-gray-500 tracking-wider mb-2">// BRANDING & ENGAGEMENT
-                        </div>
                         <h3 class="text-xl font-bold text-white mb-4">Social Media Premium</h3>
                         <div class="currency-price" id="price-smm" data-usd="$350" data-pkr="PKR 40,000">
                             $350<span class="price-suffix">/ mo</span>
@@ -184,8 +178,6 @@
                 <div
                     class="premium-pricing-card border-white/5 group hover:border-[#FF6A00]/20 transition-all duration-500 grid-span-full-row">
                     <div>
-                        <div class="font-mono text-[10px] text-gray-500 tracking-wider mb-2">// HIGH-END VISION ASSETS
-                        </div>
                         <h3 class="text-xl font-bold text-white mb-4">Graphic Designing Premium</h3>
                         <div class="currency-price" id="price-graphics" data-usd="$280" data-pkr="PKR 35,000">
                             $280<span class="price-suffix">/ mo</span>
