@@ -49,11 +49,11 @@
             </nav>
 
             <!-- Fixed Admin Link (Removed orphan li tag) -->
-            <div class="nav-item-admin">
+            <!-- <div class="nav-item-admin">
                 <a class="nav-link" href="admin_login.php" style="color: var(--text-primary); font-weight: 600;">
                     <i class="fas fa-user-shield" style="color: #FF6A00; margin-right: 5px;"></i> Admin
                 </a>
-            </div>
+            </div> -->
 
             <!-- CTA Button -->
             <div class="hidden md:block">
